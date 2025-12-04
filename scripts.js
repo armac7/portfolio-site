@@ -1,0 +1,69 @@
+const catholicVerses = [
+    {
+        text: "Unless the Lord builds the house, those who build it labor in vain.",
+        reference: "Psalm 127:1",
+        translation: "NABRE"
+    },
+    {
+        text: "Whatever you do, work heartily, as for the Lord and not for others.",
+        reference: "Colossians 3:23",
+        translation: "NABRE"
+    },
+    {
+        text: "Commit your work to the Lord, and your plans will be established.",
+        reference: "Proverbs 16:3",
+        translation: "NABRE"
+    },
+    {
+        text: "Just so, your light must shine before others, that they may see your good deeds and glorify your heavenly Father.",
+        reference: "Matthew 5:16",
+        translation: "NABRE"
+    },
+    {
+        text: "So whether you eat or drink, or whatever you do, do everything for the glory of God.",
+        reference: "1 Corinthians 10:31",
+        translation: "NABRE"
+    },
+    {
+        text: "I can do all things through him who strengthens me.",
+        reference: "Philippians 4:13",
+        translation: "NABRE"
+    },
+    {
+        text: "All good giving and every perfect gift is from above, coming down from the Father of lights.",
+        reference: "James 1:17",
+        translation: "NABRE"
+    },
+    {
+        text: "Do not grow slack in zeal, be fervent in spirit, serve the Lord.",
+        reference: "Romans 12:11",
+        translation: "NABRE"
+    },
+    {
+        text: "For we are his handiwork, created in Christ Jesus for the good works that God has prepared in advance.",
+        reference: "Ephesians 2:10",
+        translation: "NABRE"
+    },
+    {
+        text: "Trust in the Lord with all your heart, on your own intelligence do not rely.",
+        reference: "Proverbs 3:5",
+        translation: "NABRE"
+    }
+];
+
+function getRandomVerse() {
+    return catholicVerses[Math.floor(Math.random() * catholicVerses.length)];
+}
+
+// Load verse on page load
+window.addEventListener('DOMContentLoaded', () => {
+    const verse = getRandomVerse();
+    
+    const verseElement = document.querySelector('.hero-verse');
+    const referenceElement = document.querySelector('.hero-reference');
+    
+    if (verseElement && verse) {
+        verseElement.textContent = `"${verse.text}"`;
+        referenceElement.textContent = `— ${verse.reference}`;
+    }
+});
