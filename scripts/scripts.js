@@ -51,19 +51,51 @@ const catholicVerses = [
     }
 ];
 
+const latinPhrases = [
+    {
+        latin: "Ora, Crea, Code.",
+        english: "Pray, Create, Code."
+    },
+    {
+        latin: "Fides et Ratio, Systemata et Ordo.",
+        english: "Faith and Reason, Systems and Order."
+    },
+    {
+        latin: "Dominus Est Dux Algorithmi.",
+        english: "The Lord is the Guide of the Algorithm."
+    },
+    {
+        latin: "Caritas in Veritate, Ars in Codice.",
+        english: "Charity in Truth, Art in Code."
+    }
+];
+
 function getRandomVerse() {
     return catholicVerses[Math.floor(Math.random() * catholicVerses.length)];
+}
+
+function getLatinPhrase() {
+    return latinPhrases[Math.floor(Math.random() * latinPhrases.length)];
 }
 
 // Load verse on page load
 window.addEventListener('DOMContentLoaded', () => {
     const verse = getRandomVerse();
+    const latinPhrase = getLatinPhrase();
     
     const verseElement = document.querySelector('.hero-verse');
     const referenceElement = document.querySelector('.hero-reference');
+
+    const latinElement = document.querySelector('.hero-latin');
+    const englishElement = document.querySelector('.hero-english');
     
     if (verseElement && verse) {
         verseElement.textContent = `"${verse.text}"`;
         referenceElement.textContent = `— ${verse.reference}`;
+    }
+
+    if (latinElement && latinPhrase) {
+        latinElement.textContent = `"${latinPhrase.latin}"`;
+        englishElement.textContent = `("${latinPhrase.english}")`;
     }
 });
