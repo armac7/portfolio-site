@@ -2,7 +2,7 @@ fetch("./lib/projs.json")
     .then(response => response.json())
     .then(data => {
         const projectsContainer = document.querySelector('.projects');
-        data.projects.forEach(project => {
+        data.forEach(project => {
             const projectCard = document.createElement('div');
             projectCard.classList.add('project-card');
             projectCard.innerHTML = `
@@ -10,12 +10,12 @@ fetch("./lib/projs.json")
                     <img src="${project.image}" alt="${project.title}" class="project-image">
                 </div>
                 <div class="project-info">
-                    <h3 class="project-title">${project.title}</h3>
+                    <h3 class="project-title">${project.name}</h3>
                     <p class="project-description">${project.description}</p>
                     <div class="skill-tags">
-                        ${project.skills.map(skill => `<span class="tag">${skill}</span>`).join('')}
+                        ${project.tags.map(skill => `<span class="tag">${skill}</span>`).join('')}
                     </div>
-                    <a href="${project.link}" class="btn-secondary" target="_blank">View</a>
+                    <a href="${project.url}" class="btn-secondary" target="_blank">View</a>
                 </div>
             `;
             projectsContainer.appendChild(projectCard);
