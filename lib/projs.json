@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Left 4 Dead 2: Beta Pack",
+    "image": "./styles/imgs/l4d2-beta-pack.png",
+    "description": "The Left 4 Dead 2 Beta Restoration Project gives the Left 4 Dead community a faithful remake of the Left 4 Dead 2 E3 Demo, a pre-release build of Left 4 Dead 2 that showcases many unused designs, features, and concepts. Using this mod pack, Left 4 Dead 2 players can relive the unique experience from E3 2009.",
+    "tags": ["C++", "Graphic Design", "Team Leadership", "Product Management"],
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=413903495"
+  },
+  {
+    "name": "Examen: A Confession App",
+    "image": "./styles/imgs/examen-logo.png",
+    "description": "A Windows Forms application designed to guide users through a structured Catholic examination of conscience. The program walks users through identifying sins, customizing their preparation, selecting optional prayers, and finally receiving a step-by-step Confession guide tailored to their selections. The goal of the project is to provide a simple, accessible, and reverent tool to help Catholics prepare for Confession with clarity and sincerity.",
+    "tags": [
+      "C#",
+      "UI/UX Design",
+      "Visual Studio Community",
+      "Event-Driven Programming Paradigm"
+    ],
+    "url": "https://github.com/armac7/examen-a-confession-app"
+  },
+  {
+    "name": "BishopBot",
+    "image": "./styles/imgs/bishop-bot-logo.png",
+    "description": "A discord bot built using Node.js and the Discord.js library. BishopBot is designed to help users cite the Catholic Catechism quickly and easily within Discord servers. The bot responds to speciifc commands by fetching and displaying relevant Catechism passages, making it a valuable tool for individuals and communities seeking to deepen their understanding of Catholic teachings. It also offers additional features, such as information on heresies and Church councils.",
+    "tags": ["Node.Js", "SQLite3", "RESTful API"],
+    "url": "https://github.com/armac7/catechesis-discord-bot/tree/main"
+  }
+]

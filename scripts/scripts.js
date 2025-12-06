@@ -1,3 +1,28 @@
+fetch("./lib/projs.json")
+    .then(response => response.json())
+    .then(data => {
+        const projectsContainer = document.querySelector('.projects');
+        data.projects.forEach(project => {
+            const projectCard = document.createElement('div');
+            projectCard.classList.add('project-card');
+            projectCard.innerHTML = `
+                <div class="project-img">
+                    <img src="${project.image}" alt="${project.title}" class="project-image">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">${project.title}</h3>
+                    <p class="project-description">${project.description}</p>
+                    <div class="skill-tags">
+                        ${project.skills.map(skill => `<span class="tag">${skill}</span>`).join('')}
+                    </div>
+                    <a href="${project.link}" class="btn-secondary" target="_blank">View</a>
+                </div>
+            `;
+            projectsContainer.appendChild(projectCard);
+        });
+    })
+    .catch(error => console.error('Error loading projects:', error));
+
 const catholicVerses = [
     {
         text: "Unless the Lord builds the house, those who build it labor in vain.",
