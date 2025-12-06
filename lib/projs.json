@@ -1,7 +1,7 @@
 [
   {
     "name": "Left 4 Dead 2: Beta Pack",
-    "image": "./styles/imgs/l4d2-beta-pack.png",
+    "image": "./styles/imgs/l4d2-beta-pack-logo.jpg",
     "description": "The Left 4 Dead 2 Beta Restoration Project gives the Left 4 Dead community a faithful remake of the Left 4 Dead 2 E3 Demo, a pre-release build of Left 4 Dead 2 that showcases many unused designs, features, and concepts. Using this mod pack, Left 4 Dead 2 players can relive the unique experience from E3 2009.",
     "tags": ["C++", "Graphic Design", "Team Leadership", "Product Management"],
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=413903495"
