@@ -90,6 +90,27 @@ body {
     color: var(--amber-500);
 }
 
+.footer {
+    background: var(--stone-800);
+    padding: 1rem 0;
+    text-align: left;
+    color: var(--stone-400);
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-info {
+    margin-left: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.footer a {
+    color: var(--amber-500);
+    text-decoration: none;
+}
+
 .divider {
     height: 0.25rem;
     width: 20rem;

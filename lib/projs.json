@@ -2,7 +2,7 @@
   {
     "name": "Left 4 Dead 2: Beta Pack",
     "image": "./styles/imgs/l4d2-beta-pack-logo.jpg",
-    "description": "The Left 4 Dead 2 Beta Restoration Project gives the Left 4 Dead community a faithful remake of the Left 4 Dead 2 E3 Demo, a pre-release build of Left 4 Dead 2 that showcases many unused designs, features, and concepts. Using this mod pack, Left 4 Dead 2 players can relive the unique experience from E3 2009.",
+    "description": "The Left 4 Dead 2 Beta Restoration Project gives the Left 4 Dead community a faithful remake of the Left 4 Dead 2 E3 Demo, a pre-release build of Left 4 Dead 2 that showcases many unused designs, features, and concepts. Using this mod pack, Left 4 Dead 2 players can relive the unique experience from E3 2009. I worked as project co-lead and lead graphic designer, as well as contributing to various scripts, level design, and playtesting.",
     "tags": ["C++", "Graphic Design", "Team Leadership", "Product Management"],
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=413903495"
   },
@@ -14,7 +14,8 @@
       "C#",
       "UI/UX Design",
       "Visual Studio Community",
-      "Event-Driven Programming Paradigm"
+      "Event-Driven Programming Paradigm",
+      "Git"
     ],
     "url": "https://github.com/armac7/examen-a-confession-app"
   },
@@ -22,7 +23,21 @@
     "name": "BishopBot",
     "image": "./styles/imgs/bishop-bot-logo.png",
     "description": "A discord bot built using Node.js and the Discord.js library. BishopBot is designed to help users cite the Catholic Catechism quickly and easily within Discord servers. The bot responds to speciifc commands by fetching and displaying relevant Catechism passages, making it a valuable tool for individuals and communities seeking to deepen their understanding of Catholic teachings. It also offers additional features, such as information on heresies and Church councils.",
-    "tags": ["Node.Js", "SQLite3", "RESTful API"],
+    "tags": ["Node.Js", "SQLite3", "RESTful API", "Git", "Discord.js"],
     "url": "https://github.com/armac7/catechesis-discord-bot/tree/main"
+  },
+  {
+    "name": "Portfolio Site",
+    "image": "./styles/imgs/portfolio-logo.png",
+    "description": "A personal portfolio website built using HTML, CSS, and JavaScript. This site showcases my projects, skills, and experiences in a clean and professional manner. It is designed to be responsive and user-friendly, ensuring that visitors can easily navigate and access information about my work across various devices.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Responsive Design",
+      "UI/UX Design",
+      "Web Development"
+    ],
+    "url": "https://github.com/armac7/portfolio-site"
   }
 ]
