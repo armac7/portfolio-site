@@ -25,8 +25,8 @@ body {
     line-height: 1.6;
 }
 
+/*************************** Navbar Styles ***************************/
 #navbar {
-    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -36,7 +36,8 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-#navbar.scrolled {
+.scrolled {
+    position: fixed;
     background: rgba(28, 25, 23, 0.95);
     backdrop-filter: blur(8px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -90,6 +91,8 @@ body {
     color: var(--amber-500);
 }
 
+/*************************** Footer Styles ***************************/
+
 .footer {
     background: var(--stone-800);
     padding: 1rem 0;
@@ -110,6 +113,8 @@ body {
     color: var(--amber-500);
     text-decoration: none;
 }
+
+/*************************** Hero Styles ***************************/
 
 .divider {
     height: 0.25rem;
@@ -208,6 +213,39 @@ body {
     line-height: 1.8;
 }
 
+.scroll-indicator {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+}
+
+.scroll-icon {
+    width: 1.5rem;
+    height: 2.5rem;
+    border: 2px solid rgba(217, 119, 6, 0.5);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+}
+
+.scroll-icon::before {
+    content: '';
+    width: 0.25rem;
+    height: 0.75rem;
+    background: var(--amber-500);
+    border-radius: 0.25rem;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-10px); }
+}
+
+/*************************** Button Styles ***************************/
+
 .btn-primary {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -247,36 +285,7 @@ body {
     transform: translateY(-2px);
 }
 
-.scroll-indicator {
-    position: absolute;
-    bottom: 2.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: bounce 2s infinite;
-}
-
-.scroll-icon {
-    width: 1.5rem;
-    height: 2.5rem;
-    border: 2px solid rgba(217, 119, 6, 0.5);
-    border-radius: 1rem;
-    display: flex;
-    justify-content: center;
-    padding-top: 0.5rem;
-}
-
-.scroll-icon::before {
-    content: '';
-    width: 0.25rem;
-    height: 0.75rem;
-    background: var(--amber-500);
-    border-radius: 0.25rem;
-}
-
-@keyframes bounce {
-    0%, 100% { transform: translateX(-50%) translateY(0); }
-    50% { transform: translateX(-50%) translateY(-10px); }
-}
+/*************************** Section Styles ***************************/
 
 section {
     padding: 5rem 1rem;
@@ -355,6 +364,7 @@ section {
     color: var(--amber-400)
 }
 
+/*************************** Project Styles ***************************/
 .tag {
     display: inline-block;
     background: rgba(82, 81, 81, 0.5);
@@ -407,6 +417,8 @@ section {
 .project-info {
     margin-left: 1rem;
 }
+
+/*************************** Responsive Styles ***************************/
 
 @media (max-width: 900px) {
     .intro {
