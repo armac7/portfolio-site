@@ -414,6 +414,10 @@ section {
         text-align: center;
     }
 
+    .scroll-icon {
+        visibility: hidden;
+    }
+
     .intro-text {
         max-width: 600px;
     }
