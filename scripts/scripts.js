@@ -1,3 +1,13 @@
+window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+// Load projects from JSON and render them
 fetch("./lib/projs.json")
     .then(response => response.json())
     .then(data => {
@@ -23,6 +33,7 @@ fetch("./lib/projs.json")
     })
     .catch(error => console.error('Error loading projects:', error));
 
+// Bible verses and Latin phrases
 const catholicVerses = [
     {
         text: "Unless the Lord builds the house, those who build it labor in vain.",
@@ -95,6 +106,7 @@ const latinPhrases = [
     }
 ];
 
+// Function to get a random verse and Latin phrase
 function getRandomVerse() {
     return catholicVerses[Math.floor(Math.random() * catholicVerses.length)];
 }
