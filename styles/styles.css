@@ -15,7 +15,7 @@
     --amber-700: #b45309;
     --amber-600: #d97706;
     --amber-500: #f59e0b;
-    --amber-400: #fbbf24;
+    --amber-400: rgb(251, 191, 36);
 }
 
 body {
@@ -350,13 +350,34 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    max-width: 500px;
+    max-width: 1000px;
 }
 
-.skill-tags {
+
+.skill-window {
+    border: 2px solid var(--amber-500);
+    min-width: 20%;
+    min-height: 420px;
+    max-height: 420px;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background: rgba(41, 37, 36, 0.5);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 1rem;
 }
+
+.skill-window:hover {
+    border-color: rgba(251, 191, 36, 0.6);
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.2);
+    transform: translateX(10px) translateY(-10px);
+}
+.skill-window .skill-tags {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .about-buttons {
     margin-top: 2rem;
@@ -439,5 +460,12 @@ section {
     .me-image img {
         max-width: 80%;
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 750px) {
+    .skill-window {
+        min-height: 100%;
+        min-width: 100%;
     }
 }

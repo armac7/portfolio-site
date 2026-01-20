@@ -12,4 +12,17 @@ document.addEventListener("DOMContentLoaded", async function() {
     catch (err) {
         console.error(err);
     }
+
+    // Load footer
+    const footer = document.getElementById("footer");
+    if (!footer) return;
+    
+    try {
+        const response = await fetch("./components/footer.html");
+        if (!response.ok) throw new Error("Failed to load footer");
+        footer.innerHTML = await response.text();
+    }
+    catch (err) {
+        console.error(err);
+    }
 });

@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Programming Languages",
+    "skills": ["C++", "Java", "C#", "Python", "JavaScript", "HTML", "CSS"]
+  },
+  {
+    "name": "Frameworks & Libraries",
+    "skills": ["Node.js", "Express.js"]
+  },
+  {
+    "name": "Databases",
+    "skills": ["MySQL", "MongoDB", "SQL"]
+  },
+  {
+    "name": "Developer Tools",
+    "skills": ["Git", "GitHub", "Linux", "VS Code", "npm", "Command Line"]
+  },
+  {
+    "name": "Concepts",
+    "skills": [
+      "Object-Oriented Programming",
+      "RESTful APIs",
+      "Data Structures",
+      "Algorithms",
+      "HTTP",
+      "Authentication Concepts",
+      "Basic Networking",
+      "Security Fundamentals"
+    ]
+  },
+  {
+    "name": "Certifications",
+    "skills": ["CompTIA A+"]
+  }
+]
