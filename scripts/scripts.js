@@ -33,6 +33,24 @@ fetch("./lib/projs.json")
     })
     .catch(error => console.error('Error loading projects:', error));
 
+fetch("./lib/skills.json")
+    .then(response => response.json())
+    .then(data => {
+        const skillsContainer = document.querySelector('.skill-tags-display');
+        data.forEach(category => {
+            const categoryDiv = document.createElement('div');
+            categoryDiv.classList.add('skill-window');
+            categoryDiv.innerHTML = `
+                <h3 class="skill-category-title">${category.name}</h3>
+                <div class="skill-tags">
+                    ${category.skills.map(skill => `<span class="tag">${skill}</span>`).join('')}
+                </div>
+            `;
+            skillsContainer.appendChild(categoryDiv);
+        });
+    })
+    .catch(error => console.error('Error loading skills:', error));
+
 // Bible verses and Latin phrases
 const catholicVerses = [
     {
