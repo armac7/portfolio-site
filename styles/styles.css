@@ -215,6 +215,7 @@ body {
 
 .scroll-indicator {
     position: absolute;
+    margin-top: auto;
     bottom: 2.5rem;
     left: 50%;
     transform: translateX(-50%);
@@ -224,6 +225,8 @@ body {
 .scroll-icon {
     width: 1.5rem;
     height: 2.5rem;
+    margin-top:2rem;
+    margin-botton: 2rem;
     border: 2px solid rgba(217, 119, 6, 0.5);
     border-radius: 1rem;
     display: flex;
